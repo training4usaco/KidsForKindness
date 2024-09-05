@@ -1,0 +1,61 @@
+.kfk__header {
+    display: flex;
+}
+
+.kfk__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 6%;
+    margin-top: 3%;
+}
+
+.kfk__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    margin-right: 50%;
+}
+
+.kfk__header-content p {
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 1vw;
+    text-transform: none;
+
+    margin: 3vw 0 3vw 0;
+}
+
+.kfk__header-bg img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.kfk__header-volunteer button {
+    width: 16vw;
+    height: 4vw;
+
+    background-color: rgb(220, 192, 166);
+    cursor: pointer;
+    border: rgb(0, 0, 0);
+    font-family: var(--font-family);
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
+    transition-delay: 0s;
+    transition-duration: 0.1s;
+    transition-property: opacity;
+    transition-timing-function: linear;
+    outline: none;
+}
