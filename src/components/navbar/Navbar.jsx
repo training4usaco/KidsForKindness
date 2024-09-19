@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
+import { motion } from "framer-motion"
+import { NavLink } from "react-router-dom";
 import './navbar.css';
 
 // BEM -> BLock Element Modifier convention
@@ -9,11 +11,11 @@ const Navbar = () => {
 
   const Menu = () => (
     <>
-      <p><a href="#mission">Our mission</a></p>
-      <p><a href="#members">Team</a></p>
-      <p><a href="#services">Services</a></p>
-      <p><a href="#volunteer">Get Involved</a></p>
-      <p><a href="#blogs">Blog</a></p>
+      <NavLink className="nav-link" to="/mission">Our Mission</NavLink>
+      <NavLink className="nav-link" to="/team">Team</NavLink>
+      <NavLink className="nav-link" to="/services">Services</NavLink>
+      <NavLink className="nav-link" to="/cta">Get Involved</NavLink>
+      <NavLink className="nav-link" to="/blog">Blog</NavLink>
     </>
   )
 
@@ -21,14 +23,17 @@ const Navbar = () => {
     <div className="kfk__navbar">
       <div className="kfk__navbar-links">
         <div className="kfk__navbar-links_title">
-          <p><a href="#home">Kids For Kindness</a></p>
+          <NavLink className="nav-link-title" to="/">Kids For Kindness</NavLink>
         </div>
         <div className="kfk__navbar-links_container">
           <Menu />
         </div>
       </div>
       <div className="kfk__navbar-donate">
-        <button type="button">Donate Now</button>
+        <motion.button type="button"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >Donate Now</motion.button>
       </div>
       <div className="kfk__navbar-menu">
         {toggleMenu
@@ -40,7 +45,10 @@ const Navbar = () => {
             <div className="kfk__navbar-menu_container-links">
               <Menu />
               <div className="kfk__navbar-menu_container-links-donate">
-                <button type="button">Donate Now</button>
+                <motion.button type="button"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >Donate Now</motion.button>
               </div>
             </div>
           </div>

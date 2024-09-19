@@ -5,3 +5,4 @@ export { default as Header } from './header/Header';
 export { default as Possibility } from './mission/Mission';
 export { default as WhatKFK } from './whatKFK/WhatKFK';
 export { default as Services } from './services/Services';
+export { default as StoryKFK } from './storyKFK/StoryKFK'

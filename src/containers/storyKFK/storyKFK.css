@@ -1,22 +1,23 @@
-.kfk__wkfk {
+.kfk__skfk {
+    flex: 1;
     display: flex;
-    margin-top: 6rem;
+    background-color: rgb(240, 240, 240);
 }
 
-.kfk__wkfk-content {
+.kfk__skfk-content {
     flex: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffffff;
     width: 100vw;
     height: auto;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    padding-left: 2rem;
 }
 
-.kfk__wkfk-content h1 {
+.kfk__skfk-content h1 {
     display: block;
     color: var(--color-text);
     font-family: var(--font-family);
@@ -26,7 +27,7 @@
     width: 50vw;
 }
 
-.kfk__wkfk-content p {
+.kfk__skfk-content p {
     color: var(--color-text);
     font-family: var(--font-family);
     text-align: center;

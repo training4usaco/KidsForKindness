@@ -1,0 +1,7 @@
+export { default as Home } from './home'
+export { default as Mission } from './mission'
+export { default as CTA } from './cta'
+export { default as Team } from './team'
+export { default as Donate } from './donate'
+export { default as Services } from './services'
+export { default as Blog } from './blog'

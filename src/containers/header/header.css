@@ -1,5 +1,8 @@
 .kfk__header {
+    flex: 1;
+    color: #ffffff;
     display: flex;
+    min-height: 10rem;
 }
 
 .kfk__header-content {
@@ -16,17 +19,16 @@
 .kfk__header-content h1 {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 3.5vw;
-    line-height: 3.5vw;
+    font-size: 64px;
+    line-height: 64px;
     margin-right: 50%;
 }
 
 .kfk__header-content p {
-    color: #ffffff;
     font-family: var(--font-family);
     font-weight: 300;
-    font-size: 1vw;
-    line-height: 1vw;
+    font-size: 16px;
+    line-height: 28.8px;
     text-transform: none;
 
     margin: 3vw 0 3vw 0;
@@ -43,14 +45,15 @@
 }
 
 .kfk__header-volunteer button {
-    width: 16vw;
-    height: 4vw;
+    width: 18rem;
+    height: 4rem;
 
     background-color: rgb(220, 192, 166);
     cursor: pointer;
     border: rgb(0, 0, 0);
     font-family: var(--font-family);
-    font-size: 1vw;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     transition-delay: 0s;

@@ -1,23 +1,24 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom';
 
-import { Footer, Blog, Possibility, Features, WhatKFK, Header } from './containers';
-import { CTA, Navbar } from './components';
+import { Navbar } from './components';
+import { Home, Mission, Team, Services, CTA, Blog, Donate } from './pages'
 import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="header__container">
-        <Navbar />
-        <Header />
-      </div>
-      <WhatKFK />
-      <Features />
-      <Possibility />
-      <CTA />
-      <Blog />
-      <Footer />
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/cta" element={<CTA />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/donate" element={<Donate />} />
+      </Routes>
+    </>
   )
 }
 
