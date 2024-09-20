@@ -23,10 +23,10 @@ const CTA = () => {
             <p>Our events are dedicated towards bringing joy to the community, and all proceeds will be donated to various charities.</p>
           </div>
           <div className="flex py-16">
-            <motion.button className="body-1 px-32 py-6 bg-black font-text text-white" type="button"
+            <a href="https://forms.gle/CyExHQJCvnseDxyK9"><motion.button className="body-1 px-32 py-6 bg-black font-text text-white" type="button"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-            ><a href="https://forms.gle/CyExHQJCvnseDxyK9">Volunteer Now!</a></motion.button>
+            >Volunteer Now!</motion.button></a>
           </div>
         </div>
         <div className="px-[10vw] pt-44">

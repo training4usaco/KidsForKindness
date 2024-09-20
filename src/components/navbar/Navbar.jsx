@@ -30,10 +30,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="kfk__navbar-donate">
-        <motion.button type="button"
+        <NavLink to="/donate"><motion.button type="button"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-        ><NavLink to="/donate">Donate Now</NavLink></motion.button>
+        >Donate Now</motion.button></NavLink>
       </div>
       <div className="kfk__navbar-menu">
         {toggleMenu
@@ -45,10 +45,10 @@ const Navbar = () => {
             <div className="kfk__navbar-menu_container-links">
               <Menu />
               <div className="kfk__navbar-menu_container-links-donate">
-                <motion.button type="button"
+                <NavLink to="/donate"><motion.button type="button"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                ><NavLink to="/donate">Donate Now</NavLink></motion.button>
+                >Donate Now</motion.button></NavLink>
               </div>
             </div>
           </div>

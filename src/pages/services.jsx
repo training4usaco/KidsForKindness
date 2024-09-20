@@ -41,10 +41,10 @@ const Services = () => {
           </div>
 
           <div className="flex pt-16 justify-center">
-            <motion.button className="body-1 px-32 py-6 bg-color-2 font-text" type="button"
+            <NavLink to="/cta"><motion.button className="body-1 px-32 py-6 bg-color-2 font-text" type="button"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-            ><NavLink to="/cta">Get Involved</NavLink></motion.button>
+            >Get Involved</motion.button></NavLink>
           </div>
         </div>
         <div className="flex flex-grow bg-cover overflow-hidden bg-[url('./assets/services_bg.png')]">

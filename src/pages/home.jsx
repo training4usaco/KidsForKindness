@@ -2,6 +2,7 @@ import { React, useState} from 'react';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 import { motion } from "framer-motion";
 import './home.css';
+import { NavLink } from "react-router-dom";
 import header_bg from '../assets/violin_bg.png';
 
 const Home = () => {
@@ -35,10 +36,10 @@ const Home = () => {
                 <h1 className="gradient__text">Music should sing, for everyone.</h1>
                   <p>Fundraisers, concerts, social media coverage, we make music sing for all.</p>
                     <div className="kfk__header-volunteer">
-                      <motion.button type="button"
+                      <NavLink to="/cta"><motion.button type="button"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                      >Get Involved</motion.button>
+                      >Get Involved</motion.button></NavLink>
                     </div>
               </div>
               <div className="kfk__header-bg">
