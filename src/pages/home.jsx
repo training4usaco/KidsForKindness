@@ -47,23 +47,23 @@ const Home = () => {
             </div>
           </header>
           <main className="flex-grow">
-            <div className="kfk__wkfk w-screen">
+            <div className="kfk__wkfk">
               <div className="kfk__wkfk-content">
                 <h1>Bringing joy to communities in the best way we as kids can.</h1>
                 <p>Kids for Kindness is a 501(c)(3) nonprofit organization that is fully run by students. The nonprofit serves as a platform for kids to actively participate in positive change in communities and creates opportunities for kids to interact with the world around us.</p>
               </div>
               <div className="kfk__wkfk-bg"/>
-              <div className="kfk__skfk w-screen">
-                <div className="kfk__skfk-content">
-                  <h1>Our Story</h1>
-                  <p>Our journey began many years ago with two brothers and an upright piano. Along the way was lots of practice, lessons, and more practice. Then came the recitals and piano competitions. We wanted to do more with our music -- we wanted to share it with others. Eventually we found ourselves playing in hospitals for patients and health care workers, and loved it. That led to routine performances in local nursing homes and then to Kids for Kindness!</p>
-                </div>
-                <div className="bg-cover overflow-hidden bg-[url('./assets/music_splash_bg.png')]">
-                  <div className="w-[60rem] h-[40rem]"/>
-                </div>
+            </div>
+            <div className="kfk__skfk">
+              <div className="kfk__skfk-content">
+                <h1>Our Story</h1>
+                <p>Our journey began many years ago with two brothers and an upright piano. Along the way was lots of practice, lessons, and more practice. Then came the recitals and piano competitions. We wanted to do more with our music -- we wanted to share it with others. Eventually we found ourselves playing in hospitals for patients and health care workers, and loved it. That led to routine performances in local nursing homes and then to Kids for Kindness!</p>
+              </div>
+              <div className="bg-cover overflow-hidden bg-[url('./assets/music_splash_bg.png')]">
+                <div className="w-[60rem] h-[40rem]"/>
               </div>
             </div>
-            <div className="kfk__services flex flex-col h-[35rem] pt-[5rem] bg-white w-screen">
+            <div className="kfk__services flex flex-col h-[35rem] pt-[5rem] bg-white">
               <div className="h1 text-color-3">
                 <h1>{"What We Do"}</h1>
               </div>
@@ -74,9 +74,6 @@ const Home = () => {
               </div>
             </div>
           </main>
-          <footer className="flex-grow">
-            
-          </footer>
         </div>
     );
 }

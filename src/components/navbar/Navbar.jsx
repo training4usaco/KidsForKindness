@@ -33,7 +33,7 @@ const Navbar = () => {
         <motion.button type="button"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-        >Donate Now</motion.button>
+        ><NavLink to="/donate">Donate Now</NavLink></motion.button>
       </div>
       <div className="kfk__navbar-menu">
         {toggleMenu
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <motion.button type="button"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                >Donate Now</motion.button>
+                ><NavLink to="/donate">Donate Now</NavLink></motion.button>
               </div>
             </div>
           </div>

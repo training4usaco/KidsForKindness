@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 
-import { Navbar } from './components';
+import { Navbar, Footer } from './components';
 import { Home, Mission, Team, Services, CTA, Blog, Donate } from './pages'
 import './App.css'
 
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/donate" element={<Donate />} />
       </Routes>
+      <Footer />
     </>
   )
 }

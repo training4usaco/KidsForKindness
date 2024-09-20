@@ -188,7 +188,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -100;
+    z-index: -1;
 }
 
 .kfk__header-volunteer button {
@@ -208,6 +208,46 @@
     transition-property: opacity;
     transition-timing-function: linear;
     outline: none;
+}
+
+.kfk__wkfk {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.kfk__wkfk-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100vw;
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.kfk__wkfk-content h1 {
+    display: block;
+    color: var(--color-text);
+    font-family: var(--font-family);
+    text-align: center;
+    font-weight: 400;
+    font-size: 44.8px;
+    width: 50vw;
+}
+
+.kfk__wkfk-content p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    text-align: center;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 28.8px;
+    text-transform: none;
+    width: 40vw;
+    margin-top: 2vw;
 }
 
 .kfk__skfk {
