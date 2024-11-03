@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const Menu = () => (
-    <div className="flex flex-col">
+    <div className={"flex" + (toggleMenu ? " flex-col" : " flex-row")}>
       <NavLink className="nav-link" to="/mission">Our Mission</NavLink>
       <NavLink className="nav-link" to="/team">Team</NavLink>
       <NavLink className="nav-link" to="/services">Services</NavLink>
