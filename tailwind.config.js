@@ -13,6 +13,7 @@ module.exports = {
           3: "#1E008f",
           4: "#000000",
           5: "#AAAAAA",
+          6: "#E6E7EB"
         }
       },
       fontFamily: {

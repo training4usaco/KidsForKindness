@@ -6,7 +6,7 @@ const Team = () => {
   function Member(name, title, bio) {
 
     return (
-      <div className="flex flex-col">
+      <div className="flex flex-col border-none">
         <div className="h3 text-color-3 text-left">
           <p>{name}</p>
         </div>
@@ -25,7 +25,7 @@ const Team = () => {
       <div className="flex h1 text-color-3 pt-40">
         <p>Meet Our Team</p>
       </div>
-      <div className="w-screen place-items-center grid grid-cols-3 border-0 divide-x py-20 px-20">
+      <div className="w-screen place-items-center grid grid-cols-3 border-0 m-0 divide-x py-20 px-20">
         {Member("Alexander Ma", "Founder", "")}
         {Member("Bryan Ma", "Co-Founder", "")}
         {Member("Alex Liu", "CTO", "")}

@@ -48,7 +48,7 @@
     text-transform: capitalize;
     flex-direction: column;
 
-    margin: 0.5rem;
+    margin: 0.6rem 2rem;
     cursor: pointer;
 }
 
@@ -97,9 +97,9 @@
     box-shadow: rgba(0, 0, 0, 0.2);
 }
 
-.kfk__navbar-menu_container p {
+/* .kfk__navbar-menu_container p {
     margin: 1vw 0;
-}
+} */
 
 .kfk__navbar-menu_container-links-donate {
     display: none;
@@ -113,11 +113,19 @@
     .kfk__navbar-menu {
         display: flex;
     }
+    
+    .kfk__navbar-menu_container p, .nav-link {
+        margin: 0.6rem 0.5rem;
+    }
 }
 
 @media screen and (max-width: 710px) {
     .kfk__navbar {
         padding: 2rem 4rem;
+    }
+
+    .kfk__navbar-menu_container p, .nav-link {
+        margin: 0.6rem 0.5rem;
     }
 }
 
@@ -138,4 +146,7 @@
         display: block;
     }
 
+    .kfk__navbar-menu_container p, .nav-link {
+        margin: 0.6rem 0.5rem;
+    }
 }
