@@ -10,13 +10,13 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const Menu = () => (
-    <>
+    <div className="flex flex-col">
       <NavLink className="nav-link" to="/mission">Our Mission</NavLink>
       <NavLink className="nav-link" to="/team">Team</NavLink>
       <NavLink className="nav-link" to="/services">Services</NavLink>
       <NavLink className="nav-link" to="/cta">Get Involved</NavLink>
       <NavLink className="nav-link" to="/blog">Blog</NavLink>
-    </>
+    </div>
   )
 
   return (
@@ -37,12 +37,12 @@ const Navbar = () => {
       </div>
       <div className="kfk__navbar-menu">
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)}/>
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)}/>
+          ? <RiCloseLine color="#fff" size={29} onClick={() => setToggleMenu(false)}/>
+          : <RiMenu3Line color="#fff" size={29} onClick={() => setToggleMenu(true)}/>
         }
         {toggleMenu && (
           <div className="kfk__navbar-menu_container scale-up-center">
-            <div className="kfk__navbar-menu_container-links">
+            <div className="kfk__navbar-menu_container-links flex flex-col justify-end">
               <Menu />
               <div className="kfk__navbar-menu_container-links-donate">
                 <NavLink to="/donate"><motion.button type="button"

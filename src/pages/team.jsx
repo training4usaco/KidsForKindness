@@ -25,9 +25,14 @@ const Team = () => {
       <div className="flex h1 text-color-3 pt-40">
         <p>Meet Our Team</p>
       </div>
-      <div className="flex flex-1 w-screen justify-evenly px-8 py-20 pb-40">
-        {Member("Alexander Ma", "Founder", "N/A")}
-        {Member("Bryan Ma", "Co-Founder", "N/A")}
+      <div className="w-screen place-items-center grid grid-cols-3 border-0 divide-x py-20 px-20">
+        {Member("Alexander Ma", "Founder", "")}
+        {Member("Bryan Ma", "Co-Founder", "")}
+        {Member("Alex Liu", "CTO", "")}
+      </div>
+      <div className="w-screen place-items-center grid grid-cols-2 border-0 divide-x py-20 px-20">
+        {Member("Maggie Liu", "COO", "")}
+        {Member("Helen Wu", "SVP", "")}
       </div>
     </div>
   );

@@ -46,8 +46,9 @@
     font-size: 16px;
     line-height: 16px;
     text-transform: capitalize;
+    flex-direction: column;
 
-    margin: 1.5vw;
+    margin: 0.5rem;
     cursor: pointer;
 }
 
@@ -66,7 +67,7 @@
     font-style: normal;
     font-weight: 500;
     outline: none;
-    margin: 1.5vw;
+    margin: 1.5vw 0;
 }
 
 .kfk__navbar-menu {
@@ -82,8 +83,6 @@
 
 .kfk__navbar-menu_container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     flex-direction: column;
 
     text-align: end;
@@ -93,7 +92,7 @@
     top: 40px;
     right: 0;
     margin-top: 1rem;
-    min-width: 210px;
+    height: 200px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2);
 }
@@ -116,7 +115,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 710px) {
     .kfk__navbar {
         padding: 2rem 4rem;
     }
