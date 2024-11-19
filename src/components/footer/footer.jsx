@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 import { motion } from "framer-motion"
 import { NavLink } from "react-router-dom";
-import icon from '../../assets/instagram_icon.png';
+import instagram_icon from '../../assets/instagram_icon.png';
+import twitter_icon from '../../assets/twitter_icon.png';
+import gmail_icon from '../../assets/gmail_icon.png';
+import discord_icon from '../../assets/discord_icon.png';
+import phone_icon from '../../assets/phone_icon.png';
 
 // BEM -> BLock Element Modifier convention
 
@@ -13,17 +17,30 @@ const Footer = () => {
         <div className="h-[10rem]"/>
       </div>
       <div className="relative flex flex-row bg-color-2 min-h-64">
-        <div className="relative flex title-1 px-[4vw] py-20">
-          <p>Kids For Kindness</p>
+        <div className="relative flex flex-col px-[4vw] py-16">
+          <div className="title-1">
+            <p>Kids For Kindness</p>
+          </div>
+          <div className="h4 text-left pt-5">
+            <p>kidsforkindness24@gmail.com</p>
+            <p>+1 699-240-3141</p>
+          </div>
         </div>
 
         <div className="relative flex flex-col px-[8vw] py-20">
             <div className="title-1 text-[28px]">
                 <p>Our Socials</p>
             </div>
-            <div className="body-1 flex flex-row py-4 cursor-pointer">
-                <img src={icon} alt="icon" className="w-6 h-6"/>
-                <p className="px-4"><a href="https://www.instagram.com/kidsforkindnessca">Instagram</a></p>
+            <div className="body-1 flex flex-row justify-between py-4 cursor-pointer align-middle pr-10">
+                <a href="https://www.instagram.com/kidsforkindnessca">
+                  <img src={instagram_icon} alt="icon" className="w-6 h-6"/>
+                </a>
+                <a href="https://x.com/Kids4KindnessCA">
+                  <img src={twitter_icon} alt="icon" className="w-6 h-6"/>
+                </a>
+                <a href="https://discord.gg/B7yRveZ8EN">
+                  <img src={discord_icon} alt="icon" className="w-6 h-6 pt-1"/>
+                </a>
             </div>
         </div>
 
