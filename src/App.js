@@ -7,12 +7,14 @@ import './App.css'
 import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
-  gtmId: 'GTM-KMRPP84B'
+  gtmId: 'G-ETM42TEX59'
 }
 TagManager.initialize(tagManagerArgs)
 
 const App = () => {
-  
+  window.dataLayer.push({
+    event: 'pageview'
+  });
   return (
     <>
       <Navbar />
